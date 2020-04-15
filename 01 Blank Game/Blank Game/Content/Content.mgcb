@@ -37,6 +37,13 @@
 /processorParam:TextureFormat=Color
 /build:coin.png
 
+#begin Controls/font.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:Controls/font.spritefont
+
 #begin gravel.png
 /importer:TextureImporter
 /processor:TextureProcessor
