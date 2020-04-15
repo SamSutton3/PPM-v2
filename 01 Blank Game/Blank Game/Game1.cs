@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using System;
 namespace PPM_Maze
 {
     /// <summary>
@@ -16,6 +16,7 @@ namespace PPM_Maze
         //Obstacle obstacle;
         public static Camera2D _camera;
         LevelOne levelOne;
+        LevelTwo levelTwo;
         Levels level;
         //constants
         public static int windowWidth = 1200;
@@ -67,7 +68,7 @@ namespace PPM_Maze
             pathTexture = this.Content.Load<Texture2D>("gravel");
             coinTexture = this.Content.Load <Texture2D>("coin");
             Coin.setTexture(coinTexture);
-            cursor = new Cursor(cursorTexture, new Vector2(400, 240));
+            cursor = new Cursor(cursorTexture, new Vector2(400, 240),_camera);
             levelOne = new LevelOne(2000,pathTexture);
             level.initialiseGraphics(spriteBatch, whiteRectangle);
             
@@ -95,19 +96,25 @@ namespace PPM_Maze
 
             // TODO: Add your update logic here
             var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
-            cursor.Location = new Vector2(Mouse.GetState().X, Mouse.GetState().Y);
+            cursor.worldLocation = new Vector2(Mouse.GetState().X + _camera.Position.X, Mouse.GetState().Y);
             cursor.spritePos = new Vector2(Mouse.GetState().X - 15, Mouse.GetState().Y - 15);
 
             _camera.Position += new Vector2(cameraScrollSpeed, 0) * deltaTime;
 
             foreach(Coin coin in Levels.coinList)
             {
-                coin.checkIfCollected(cursor.Location);
+                coin.checkIfCollected(cursor.worldLocation);
 
             }
             LevelOne.checkCollectedCoins();
             //obstacle.updatePosition(gameTime);
-
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+            {
+                setLevelsToNull();
+                levelTwo = new LevelTwo(2000, pathTexture);
+                _camera.Position = new Vector2(0, 0);
+            }
+            //Console.WriteLine("camera position is "+ _camera.Position.X + "," + _camera.Position.Y);
             base.Update(gameTime);
         }
 
@@ -119,7 +126,7 @@ namespace PPM_Maze
         {
             var viewMatrix = _camera.GetViewMatrix();
             //spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone, null, _camera.GetViewMatrix());
-            if (Levels.path.isPlayerInBounds(cursor.Location))
+            if (Levels.path.isPlayerInBounds(cursor.worldLocation))
             {
                 GraphicsDevice.Clear(goodColor);
             }
@@ -132,6 +139,13 @@ namespace PPM_Maze
             cursor.Draw(spriteBatch);
             //spriteBatch.End();
             base.Draw(gameTime);
+        }
+
+        void setLevelsToNull()
+        {
+            
+            levelOne = null;
+            levelTwo = null;
         }
     }
 }

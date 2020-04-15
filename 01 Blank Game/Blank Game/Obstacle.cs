@@ -56,7 +56,7 @@ namespace PPM_Maze
         {
             var viewMatrix = _camera.GetViewMatrix();
             spritebatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone, null, _camera.GetViewMatrix());
-            if (isPlayerInBounds(Game1.cursor.Location))
+            if (isPlayerInBounds(Game1.cursor.worldLocation))
             {
                 spritebatch.Draw(whiteRect, position, new Rectangle((int)position.X, (int)position.Y, (int)widthHeight.X, (int)widthHeight.Y), Game1.badColor);
             }

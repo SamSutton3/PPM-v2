@@ -126,4 +126,59 @@ namespace PPM_Maze
             numCoinsCollected = tempCoinCounter;
         }
     }
+
+    public class LevelTwo:Levels
+    {
+        public LevelTwo(int levelwidth, Texture2D pathtexture)
+        {
+            levelWidth = levelwidth;
+            pathTexture = pathtexture;
+            
+            initialisePath();
+            initialiseObstacles();
+            initialiseCoins();
+        }
+        public void initialisePath()
+        {
+            path = new Path(levelWidth, Game1.windowHeight / 4, pathTexture, Game1.windowHeight / 4);
+        }
+        public void initialiseObstacles()
+        {
+
+            obstacleList = new List<Obstacle>
+            {
+             new Obstacle(100, (int)Path.startPos.Y, 50, 100),
+             new Obstacle(300,((int)Path.startPos.Y + Path.height) - 100,100,100),
+             new Obstacle(500, (int)Path.startPos.Y, 80, 80),
+             new Obstacle(800, (int)Path.startPos.Y, 100, 30),
+             new Obstacle(800,((int)Path.startPos.Y + Path.height) - 30,100,30),
+             new Obstacle(1500, (int)Path.startPos.Y, 100, 60),
+             new Obstacle(1500,((int)Path.startPos.Y + Path.height) - 60,100,60),
+            };
+
+        }
+
+        public void initialiseCoins()
+        {
+            coinList = new List<Coin>
+            {
+                new Coin(600,((int)Path.startPos.Y +50)),
+                new Coin(1030,((int)Path.startPos.Y)),
+                new Coin(1620,((int)Path.startPos.Y+150))
+            };
+        }
+
+        public static void checkCollectedCoins()
+        {
+            int tempCoinCounter = 0;
+            foreach (Coin coin in coinList)
+            {
+                if (!coin.isAvailable)
+                {
+                    tempCoinCounter++;
+                }
+            }
+            numCoinsCollected = tempCoinCounter;
+        }
+    }
 }

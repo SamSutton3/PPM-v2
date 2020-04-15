@@ -10,16 +10,16 @@ namespace PPM_Maze
 {
     public class Cursor
     {
-        public Vector2 Location { get; set; }
+        public Vector2 worldLocation { get; set; }
         private Texture2D Texture;
         public Vector2 spritePos;
         //public Camera2D _camera = Game1._camera;
 
-        public Cursor(Texture2D texture, Vector2 location)
+        public Cursor(Texture2D texture, Vector2 screenLocation, Camera2D camera)
         {
-            Location = location;
+            worldLocation = Vector2.Add(screenLocation, camera.Position); 
             Texture = texture;
-            spritePos = new Vector2(location.X - 15, location.Y - 15);
+            spritePos = new Vector2(screenLocation.X - 15, screenLocation.Y - 15);
         }
         public void Draw(SpriteBatch spriteBatch)
         {
