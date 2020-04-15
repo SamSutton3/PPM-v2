@@ -44,6 +44,7 @@
     <Compile Include="Button.cs" />
     <Compile Include="Camera2D.cs" />
     <Compile Include="Component.cs" />
+    <Compile Include="Menu1.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="Obstacle.cs" />
     <Compile Include="Levels.cs" />
