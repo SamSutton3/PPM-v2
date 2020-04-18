@@ -11,11 +11,11 @@ namespace PPM_Maze
     public class Path
     {
         private int width;
-        public static int height;
+        public int height;
 
-        public static  Vector2 startPos;
+        public Vector2 startPos;
 
-        private Texture2D Texture;
+        private static Texture2D Texture;
 
         private Camera2D _camera = Game1._camera;
         
@@ -25,8 +25,13 @@ namespace PPM_Maze
             width = W;
             height = H;
             startPos.Y = Y;
-            Texture = texture;
+            //Texture = texture;
 
+        }
+
+        public static void setTexture(Texture2D newTexture)
+        {
+            Texture = newTexture;
         }
 
         public Boolean isPlayerInBounds(Vector2 location)

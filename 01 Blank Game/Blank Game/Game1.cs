@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Collections.Generic;
+
 namespace PPM_Maze
 {
     /// <summary>
@@ -15,8 +17,8 @@ namespace PPM_Maze
         //Path path;
         //Obstacle obstacle;
         public static Camera2D _camera;
-        LevelOne levelOne;
-        LevelTwo levelTwo;
+        //LevelOne levelOne;
+        //LevelTwo levelTwo;
         Levels level;
         //constants
         public static int windowWidth = 1200;
@@ -27,6 +29,9 @@ namespace PPM_Maze
         public Texture2D whiteRectangle;
         public static Texture2D pathTexture;
         public static Texture2D coinTexture;
+
+        List<String> levelList;
+        int levelIndex = 0;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -48,8 +53,13 @@ namespace PPM_Maze
             whiteRectangle = new Texture2D(GraphicsDevice, 1, 1);
             whiteRectangle.SetData(new[] { Color.White });
             _camera = new Camera2D(GraphicsDevice.Viewport);
-            level = new Levels();
+
+            levelList = new List<String> { 
+            "LevelOne.txt",
+            "levelTwo.txt"
             
+            };
+
 
             base.Initialize();
         }
@@ -66,10 +76,12 @@ namespace PPM_Maze
             // TODO: use this.Content to load your game content here
             Texture2D cursorTexture = this.Content.Load<Texture2D>("CircleSprite");
             pathTexture = this.Content.Load<Texture2D>("gravel");
+            Path.setTexture(pathTexture);
             coinTexture = this.Content.Load <Texture2D>("coin");
             Coin.setTexture(coinTexture);
             cursor = new Cursor(cursorTexture, new Vector2(400, 240),_camera);
-            levelOne = new LevelOne(2000,pathTexture);
+            level = new Levels(levelList[0],pathTexture);
+            //levelOne = new LevelOne(2000,pathTexture);
             level.initialiseGraphics(spriteBatch, whiteRectangle);
             
             
@@ -106,14 +118,17 @@ namespace PPM_Maze
                 coin.checkIfCollected(cursor.worldLocation);
 
             }
-            LevelOne.checkCollectedCoins();
+            level.checkCollectedCoins();
             //obstacle.updatePosition(gameTime);
-            if (Keyboard.GetState().IsKeyDown(Keys.Enter))
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter) || level.getFinished())
             {
-                setLevelsToNull();
-                levelTwo = new LevelTwo(2000, pathTexture);
+                levelIndex++;
+                if (levelIndex > levelList.Count - 1) levelIndex = levelList.Count - 1;
+                level = new Levels(levelList[levelIndex], pathTexture);
+                level.initialiseGraphics(spriteBatch, whiteRectangle);
                 _camera.Position = new Vector2(0, 0);
             }
+            level.finishCheck(new Rectangle((int)cursor.worldLocation.X,(int)cursor.worldLocation.Y,30,30));
             //Console.WriteLine("camera position is "+ _camera.Position.X + "," + _camera.Position.Y);
             base.Update(gameTime);
         }
@@ -126,7 +141,7 @@ namespace PPM_Maze
         {
             var viewMatrix = _camera.GetViewMatrix();
             //spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone, null, _camera.GetViewMatrix());
-            if (Levels.path.isPlayerInBounds(cursor.worldLocation))
+            if (level.path.isPlayerInBounds(cursor.worldLocation))
             {
                 GraphicsDevice.Clear(goodColor);
             }
@@ -141,11 +156,11 @@ namespace PPM_Maze
             base.Draw(gameTime);
         }
 
-        void setLevelsToNull()
-        {
+        //void setLevelsToNull()
+        //{
             
-            levelOne = null;
-            levelTwo = null;
-        }
+        //    levelOne = null;
+        //    levelTwo = null;
+        //}
     }
 }
