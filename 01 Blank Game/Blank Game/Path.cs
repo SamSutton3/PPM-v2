@@ -15,6 +15,8 @@ namespace PPM_Maze
 
         public Vector2 startPos;
 
+        Rectangle boundingRect;
+
         private static Texture2D Texture;
 
         private Camera2D _camera = Game1._camera;
@@ -25,8 +27,18 @@ namespace PPM_Maze
             width = W;
             height = H;
             startPos.Y = Y;
+            boundingRect = new Rectangle((int)startPos.X, (int)startPos.Y, width, height);
             //Texture = texture;
 
+        }
+
+        public bool isPointInBounds(Vector2 point)
+        {
+            if (boundingRect.Contains(point))
+            {
+                return true;
+            }
+            return false;
         }
 
         public static void setTexture(Texture2D newTexture)

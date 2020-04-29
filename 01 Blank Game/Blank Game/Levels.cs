@@ -148,6 +148,17 @@ namespace PPM_Maze
         {
             return isFinished;
         }
+        public bool isPointInObstacle(Vector2 point)
+        {
+            foreach(Obstacle obstacle in obstacleList)
+            {
+                if (obstacle.isPlayerInBounds(point))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     

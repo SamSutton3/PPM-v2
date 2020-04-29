@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace PPM_Maze
 {
@@ -30,6 +31,10 @@ namespace PPM_Maze
         public static Texture2D pathTexture;
         public static Texture2D coinTexture;
 
+        //interval to record mouse position
+        float recordInterval = 0.1f;
+        float thetaTime = 0;
+        float elapsedTime= 0;
         List<String> levelList;
         int levelIndex = 0;
         public Game1()
@@ -107,7 +112,8 @@ namespace PPM_Maze
                 Exit();
 
             // TODO: Add your update logic here
-            var deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            elapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
             cursor.worldLocation = new Vector2(Mouse.GetState().X + _camera.Position.X, Mouse.GetState().Y);
             cursor.spritePos = new Vector2(Mouse.GetState().X - 15, Mouse.GetState().Y - 15);
 
@@ -125,9 +131,20 @@ namespace PPM_Maze
                 levelIndex++;
                 if (levelIndex > levelList.Count - 1) levelIndex = levelList.Count - 1;
                 level = new Levels(levelList[levelIndex], pathTexture);
+                Debug.WriteLine(calculatePlayerPercentage(cursor.getPositionList()));
+                cursor.resetList();
                 level.initialiseGraphics(spriteBatch, whiteRectangle);
                 _camera.Position = new Vector2(0, 0);
             }
+
+            if (elapsedTime > thetaTime + recordInterval)
+            {
+                cursor.recordLocation();
+                thetaTime += recordInterval;
+                //Debug.WriteLine("locationRecorded");
+            }
+
+            //Debug.WriteLine(elapsedTime);
             level.finishCheck(new Rectangle((int)cursor.worldLocation.X,(int)cursor.worldLocation.Y,30,30));
             //Console.WriteLine("camera position is "+ _camera.Position.X + "," + _camera.Position.Y);
             base.Update(gameTime);
@@ -154,6 +171,32 @@ namespace PPM_Maze
             cursor.Draw(spriteBatch);
             //spriteBatch.End();
             base.Draw(gameTime);
+        }
+
+        double calculatePlayerPercentage(List<Vector2> positionList)
+        {
+            double numInBounds = 0;
+            double numOutBounds = 0;
+
+            foreach(Vector2 point in positionList)
+            {
+                //if point not in path
+                if (level.isPointInObstacle(point)){
+                    numOutBounds+= 1;
+                }
+                else if (!level.path.isPointInBounds(point))
+                {
+                    numOutBounds+= 1;
+                }
+                else
+                {
+                    numInBounds+= 1;
+                }
+            }
+            double total = numInBounds + numOutBounds;
+            double ratio = 100 * (numInBounds / total);
+            ratio = Math.Round(ratio, 2);
+            return ratio;
         }
 
         //void setLevelsToNull()
