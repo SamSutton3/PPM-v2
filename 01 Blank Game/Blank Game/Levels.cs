@@ -106,9 +106,12 @@ namespace PPM_Maze
             {
                 obstacleList[i].Draw(spriteBatch, whiteRect);
             }
-            for (int i = 0; i < coinList.Count(); i++)
+            if (coinList != null)
             {
-                coinList[i].Draw(spriteBatch);
+                for (int i = 0; i < coinList.Count(); i++)
+                {
+                    coinList[i].Draw(spriteBatch);
+                }
             }
             for (int i = 0; i < numCoinsCollected; i++)
             {
@@ -161,9 +164,130 @@ namespace PPM_Maze
         }
     }
 
-    
+    public class ProceduralLevel : Levels
+    {
+        //float 0 - 1 represents difficulty
+        float difficulty = 0.5f;
+        int standardLevelHeight = 400;
+        int minDistance = 70;
+        int maxObstacles;
+        const int OBSTACLE_LIMIT = 40;
+        int maxObsWidth = 300;
+        int minObsWidth = 30;
+        int maxObsHeight;
+        int minObsHeight = 50;
+        int padding = 50;
+        int segmentWidth = 2000;
+        int generationinterval = 500;
+
+        int segmentMarker = 0;
+        Random r = new Random();
+        List<Obstacle> tempObsList = new List<Obstacle>();
+        public ProceduralLevel(Texture2D pathText)
+        {
+            pathTexture = pathText;
+            obstacleList = new List<Obstacle>();
+            path = new Path(1, standardLevelHeight, pathTexture);
+            generateSegment();
+        }
+
+        public void generationCheck(Vector2 pos)
+        {
+            if((int)pos.X >= segmentMarker - generationinterval)
+            {
+                generateSegment();
+            }
+        }
+
+        public void generateSegment()
+        {
+            maxObsHeight = standardLevelHeight - minDistance;
+            path.extend(segmentWidth);
+            maxObstacles = (int)(OBSTACLE_LIMIT * difficulty);
+            //int numObstacles = (int)(maxObstacles * difficulty);
+            //add obstacles, varying on difficulty
+            for (int i = 0; i < maxObstacles; i++)
+            {
+                bool overlapFlag = false;
+                Obstacle tempObstacle;
+                int x = r.Next(segmentMarker, segmentMarker + segmentWidth);
+                int h = r.Next(minObsHeight, maxObsHeight);
+                int w = r.Next(minObsWidth,maxObsWidth);
+                int y;
+                if(r.Next(2) == 1)
+                {
+                    y = (int)path.startPos.Y;
+                }
+                else {
+                    y = (int)path.startPos.Y + path.height - h;
+                }
+
+                tempObstacle = new Obstacle(x, y, w, h);
+
+                if(tempObsList == null)
+                {
+                    tempObsList.Add(tempObstacle);
+                }
+                else
+                {
+                    foreach(Obstacle o in tempObsList)
+                    {
+                        //if valid placement
+                        if (obstacleOverlap(o, tempObstacle))
+                        {
+                            if((int)o.getWidthHeight().Y + (int)tempObstacle.getWidthHeight().Y < standardLevelHeight - minDistance)
+                            {
+                                tempObsList.Add(tempObstacle);
+                                break;
+                            }
+                            else
+                            {
+                                overlapFlag = true;
+                                break;
+                            }
+                        }
+                        
+                    }
+
+                    if (!tempObsList.Contains(tempObstacle) && overlapFlag == false)
+                    {
+                        tempObsList.Add(tempObstacle);
+                    }
+
+                }
+                
+
+
+            }
+            foreach(Obstacle o  in tempObsList)
+            {
+                obstacleList.Add(o);
+            }
+            segmentMarker += segmentWidth;
+        }
+
+        bool obstacleOverlap(Obstacle o1,Obstacle o2)
+        {
+            if (o1.getPosition().X + o1.getWidthHeight().X + padding >= o2.getPosition().X ||
+                o2.getPosition().X + o2.getWidthHeight().X + padding >= o1.getPosition().X)
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        void alterDifficulty(float amount)
+        {
+            difficulty += amount;
+        }
+    }
+
+
 
 }
+
+
 
 //    public class LevelOne : Levels
 //    {

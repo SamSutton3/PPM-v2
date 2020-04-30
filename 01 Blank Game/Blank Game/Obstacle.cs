@@ -21,6 +21,7 @@ namespace PPM_Maze
         protected Vector2 position;
         protected Vector2 widthHeight;
         protected Camera2D _camera = Game1._camera;
+        public Rectangle bounds;
         protected int cameraScrollSpeed = Game1.cameraScrollSpeed;
         
         public Obstacle()
@@ -33,7 +34,18 @@ namespace PPM_Maze
             position.Y = posY;
             widthHeight.X = w;
             widthHeight.Y = h;
+            bounds = new Rectangle(posX, posY, w, h);
 
+        }
+
+        public Vector2 getWidthHeight()
+        {
+            return widthHeight;
+        }
+        
+        public Vector2 getPosition()
+        {
+            return position;
         }
 
         public Boolean isPlayerInBounds(Vector2 location)

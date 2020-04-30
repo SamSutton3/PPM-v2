@@ -32,6 +32,11 @@ namespace PPM_Maze
 
         }
 
+        public void extend(int amount)
+        {
+            width += amount;
+        }
+
         public bool isPointInBounds(Vector2 point)
         {
             if (boundingRect.Contains(point))
