@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Blank_Game
+namespace PPM_Maze
 {
     public class Settings : State
     {
@@ -90,11 +90,19 @@ namespace Blank_Game
         }
         private void backButton_Click(object sender, System.EventArgs e)
         {
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             _game.ChangeState(new MenuState(_game, _graphicsDevice, _content));
         }
 
         private void whiteButton_Click(object sender, System.EventArgs e)
         {
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             string path = "../../../../colour.txt";
             string strColour = "White";
             System.IO.File.WriteAllText(path, strColour);
@@ -103,6 +111,10 @@ namespace Blank_Game
 
         private void goldButton_Click(object sender, System.EventArgs e)
         {
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             string path = "../../../../colour.txt";
             string strColour = "Gold";
             System.IO.File.WriteAllText(path, strColour);
@@ -110,6 +122,10 @@ namespace Blank_Game
 
         private void blueButton_Click(object sender, System.EventArgs e)
         {
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             string path = "../../../../colour.txt";
             string strColour = "Blue";
             System.IO.File.WriteAllText(path, strColour);
@@ -118,11 +134,21 @@ namespace Blank_Game
         private void toggleOnButton_Click(object sender, System.EventArgs e)
         {
             // TO DO
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
+            Game1.toggleAudio(true);
         }
 
         private void toggleOffButton_Click(object sender, System.EventArgs e)
         {
             // TO DO
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
+            Game1.toggleAudio(false);
         }
 
         public override void PostUpdate(GameTime gameTime)

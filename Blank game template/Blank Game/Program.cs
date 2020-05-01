@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Blank_Game
+namespace PPM_Maze
 {
 #if WINDOWS || LINUX
     public static class Program

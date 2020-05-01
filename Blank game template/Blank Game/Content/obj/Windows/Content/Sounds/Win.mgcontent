@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/Sounds/Win.wav</SourceFile>
+  <SourceTime>2020-05-01T19:28:00+01:00</SourceTime>
+  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Content/Sounds/Win.xnb</DestFile>
+  <DestTime>2020-05-01T20:53:52.6146502+01:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2018-12-08T16:35:54+00:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

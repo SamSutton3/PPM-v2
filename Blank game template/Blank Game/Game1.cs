@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
-namespace Blank_Game
+namespace PPM_Maze
 {
     public class Game1 : Game
     {
@@ -17,11 +19,43 @@ namespace Blank_Game
         public static int windowHeight = 800;
         private State _currentState;
 
+        public static Song menuMusic;
+        public static SoundEffect buttonClick;
+        public static SoundEffect coin;
+        public static bool audio = true;
         private State _nextState;
 
         public void ChangeState(State state)
         {
             _nextState = state;
+        }
+
+        public static void playButtonClick()
+        {
+            buttonClick.Play();
+        }
+
+        public static void playCoinGrab()
+        {
+            coin.Play();
+        }
+
+        public static void toggleMenuMusic(bool toggle = true)
+        {
+            if (toggle)
+            {
+                MediaPlayer.Play(menuMusic);
+            }
+            else
+            {
+                MediaPlayer.Stop();
+            }
+        }
+
+        public static void toggleAudio(bool toggle)
+        {
+            audio = toggle;
+            toggleMenuMusic(toggle);
         }
 
         public Game1()
@@ -31,6 +65,10 @@ namespace Blank_Game
             graphics.PreferredBackBufferHeight = windowHeight;
             graphics.PreferredBackBufferWidth = windowWidth;
             Content.RootDirectory = "Content";
+
+            menuMusic = Content.Load<Song>("Sounds/Background-Menu3");
+            buttonClick = Content.Load<SoundEffect>("Sounds/Click2");
+            coin = Content.Load<SoundEffect>("Sounds/Coins3");
         }
 
         protected override void Initialize()

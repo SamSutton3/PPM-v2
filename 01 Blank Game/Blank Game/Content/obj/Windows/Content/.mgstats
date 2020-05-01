@@ -1,8 +1,6 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-<<<<<<< HEAD
-=======
 "C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/CircleSprite.png","C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/bin/Windows/Content/CircleSprite.xnb","TextureProcessor","Texture2DContent",2101,6485,7.195858
 "C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/coin.png","C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/bin/Windows/Content/coin.xnb","TextureProcessor","Texture2DContent",6411,10085,0.046762
+"C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/Controls/font.spritefont","C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/bin/Windows/Content/Controls/font.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21521,0.5231703
 "C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/gravel.png","C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/bin/Windows/Content/gravel.xnb","TextureProcessor","Texture2DContent",225085,360085,0.142465
 "C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/gray.jpg","C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/bin/Windows/Content/gray.xnb","TextureProcessor","Texture2DContent",86901,848785,0.2718423
->>>>>>> be88bb5601f0da26ab83321e905a9b7849b5e3b3

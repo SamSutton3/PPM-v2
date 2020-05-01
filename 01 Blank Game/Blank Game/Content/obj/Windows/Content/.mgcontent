@@ -6,10 +6,12 @@
   <SourceFiles>
     <File>C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/CircleSprite.png</File>
     <File>C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/coin.png</File>
+    <File>C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/Controls/font.spritefont</File>
     <File>C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/gravel.png</File>
     <File>C:/Users/Jack/Documents/GitHub/PPM-v2/01 Blank Game/Blank Game/Content/gray.jpg</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

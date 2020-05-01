@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Blank_Game
+namespace PPM_Maze
 {
     public abstract class Component
     {

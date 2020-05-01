@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Blank_Game
+namespace PPM_Maze
 {
     public class MenuState : State
     {
@@ -16,10 +16,12 @@ namespace Blank_Game
         public MenuState(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
+            Game1.toggleMenuMusic();
 
             var levelPlayButton = new Button(_content.Load<Texture2D>("Controls/levelPlay"))
             {
                 Position = new Vector2(300, 275),
+                
             };
 
             levelPlayButton.Click += LevelPlayButton_Click;
@@ -69,22 +71,35 @@ namespace Blank_Game
 
         private void LevelPlayButton_Click(object sender, System.EventArgs e)
         {
-
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             _game.ChangeState(new levelSelect(_game, _graphicsDevice, _content));
+
         }
         private void ContinuousPlayButton_Click(object sender, System.EventArgs e)
         {
-
-            _game.ChangeState(new Continuous(_game, _graphicsDevice, _content));
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
+            _game.ChangeState(new ProceduralLevel(_game, _graphicsDevice, _content));
         }
         private void SettingsButton_Click(object sender, System.EventArgs e)
         {
-
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             _game.ChangeState(new Settings(_game, _graphicsDevice, _content));
         }
         private void QuitButton_Click(object sender, System.EventArgs e)
         {
-
+            if (Game1.audio)
+            {
+                Game1.buttonClick.Play();
+            }
             _game.Exit();
 
         }
