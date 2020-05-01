@@ -75,3 +75,4 @@ C:\Users\Jack\Documents\GitHub\PPM-v2\01 Blank Game\Blank Game\obj\x86\Debug\PPM
 C:\Users\Jack\Documents\GitHub\PPM-v2\01 Blank Game\Blank Game\obj\x86\Debug\Blank Game.exe
 C:\Users\Jack\Documents\GitHub\PPM-v2\01 Blank Game\Blank Game\obj\x86\Debug\Blank Game.pdb
 C:\Users\Jack\Documents\GitHub\PPM-v2\01 Blank Game\Blank Game\obj\x86\Debug\PPM_Maze.csprojAssemblyReference.cache
+C:\Users\Jack\Documents\GitHub\PPM-v2\01 Blank Game\Blank Game\bin\Windows\x86\Debug\Content\gray.xnb

@@ -13,6 +13,7 @@ namespace PPM_Maze
         public Vector2 worldLocation { get; set; }
         private Texture2D Texture;
         public Vector2 spritePos;
+        List<Vector2> positions;
         //public Camera2D _camera = Game1._camera;
 
         public Cursor(Texture2D texture, Vector2 screenLocation, Camera2D camera)
@@ -20,7 +21,24 @@ namespace PPM_Maze
             worldLocation = Vector2.Add(screenLocation, camera.Position); 
             Texture = texture;
             spritePos = new Vector2(screenLocation.X - 15, screenLocation.Y - 15);
+            positions = new List<Vector2>();
         }
+
+        public void recordLocation()
+        {
+            positions.Add(worldLocation);
+        }
+
+        public List<Vector2> getPositionList()
+        {
+            return positions;
+        }
+
+        public void resetList()
+        {
+            positions = new List<Vector2>();
+        }
+
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();

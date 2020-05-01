@@ -11,11 +11,13 @@ namespace PPM_Maze
     public class Path
     {
         private int width;
-        public static int height;
+        public int height;
 
-        public static  Vector2 startPos;
+        public Vector2 startPos;
 
-        private Texture2D Texture;
+        Rectangle boundingRect;
+
+        private static Texture2D Texture;
 
         private Camera2D _camera = Game1._camera;
         
@@ -25,8 +27,28 @@ namespace PPM_Maze
             width = W;
             height = H;
             startPos.Y = Y;
-            Texture = texture;
+            boundingRect = new Rectangle((int)startPos.X, (int)startPos.Y, width, height);
+            //Texture = texture;
 
+        }
+
+        public void extend(int amount)
+        {
+            width += amount;
+        }
+
+        public bool isPointInBounds(Vector2 point)
+        {
+            if (boundingRect.Contains(point))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static void setTexture(Texture2D newTexture)
+        {
+            Texture = newTexture;
         }
 
         public Boolean isPlayerInBounds(Vector2 location)
