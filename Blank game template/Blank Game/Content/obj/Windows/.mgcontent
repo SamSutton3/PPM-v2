@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/audioLabel.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/backButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/blueButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/blueOffButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/Button.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/colourLabel.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/continuousPlay.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/exitButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/gameTitle.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/gameTitle2.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/gameTitle3.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/goldButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton1.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton10.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton11.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton12.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton2.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton3.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton4.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton5.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton6.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton7.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton8.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelButton9.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelPlay.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelSelect.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/offButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/offRedButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/onButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/onRedButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/settingsButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/settingsLabel.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/whiteButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/whiteOffButton.png</File>
+    <File>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Fonts/font.spritefont</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

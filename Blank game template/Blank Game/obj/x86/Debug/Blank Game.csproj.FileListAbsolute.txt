@@ -23,3 +23,61 @@ C:\NTU\NTU Teaching stuff\SOFT20161 Games programming\Monogame Versions\v3.6\Bla
 C:\NTU\NTU Teaching stuff\SOFT20161 Games programming\Monogame Versions\v3.6\Blank Game\Blank Game\obj\x86\Debug\Blank Game.pdb
 C:\NTU\NTU Teaching stuff\SOFT20161 Games programming\Monogame Versions\v3.6\00 Blank Game\Blank Game\obj\x86\Debug\Blank Game.exe
 C:\NTU\NTU Teaching stuff\SOFT20161 Games programming\Monogame Versions\v3.6\00 Blank Game\Blank Game\obj\x86\Debug\Blank Game.pdb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Blank Game.exe
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Blank Game.pdb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\obj\x86\Debug\Blank Game.csprojAssemblyReference.cache
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\obj\x86\Debug\Blank Game.csproj.CoreCompileInputs.cache
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\obj\x86\Debug\Blank Game.csproj.CopyComplete
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\obj\x86\Debug\Blank Game.exe
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\obj\x86\Debug\Blank Game.pdb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Fonts\font.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\Button.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\backButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\exitButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\gameTitle.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\gameTitle2.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\gameTitle3.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\settingsButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\continuousPlay.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelPlay.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton1.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton10.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton11.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton12.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton2.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton3.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton4.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton5.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton6.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton7.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton8.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelButton9.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelSelect.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\settingsLabel.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\blueButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\goldButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\offButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\onButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\whiteButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\audioLabel.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\blueOffButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\colourLabel.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\offRedButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\onRedButton.xnb
+C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\whiteOffButton.xnb
