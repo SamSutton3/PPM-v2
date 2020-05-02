@@ -15,10 +15,10 @@ namespace PPM_Maze
         SpriteFont fontDec;
         double accuracy;
 
-        public AfterLevelMenu(bool pass, double accuracy, Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        public AfterLevelMenu(bool pass, double accu, Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
-
+            accuracy = accu;
             var backButton = new Button(_content.Load<Texture2D>("Controls/backButton"))
             {
                 Position = new Vector2(50, 50),
@@ -53,9 +53,10 @@ namespace PPM_Maze
 
 
             string acc;
+            acc = "accuracy: " + accuracy.ToString();
             //accuracy.ToString(acc);
             fontDec = _content.Load<SpriteFont>("Fonts/font");
-            spriteBatch.DrawString(fontDec, "acc", new Vector2(830, 350), Color.White);
+            spriteBatch.DrawString(fontDec, acc, new Vector2(830, 350), Color.White);
 
 
 

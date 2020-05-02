@@ -186,3 +186,8 @@ C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x8
 C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\accuracy.xnb
 C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelComplete.xnb
 C:\Users\samsu\Desktop\PPM\PPM\PPM\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelSelectButton.xnb
+C:\Users\Jack\Documents\GitHub\PPM-v2\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\accuracy.xnb
+C:\Users\Jack\Documents\GitHub\PPM-v2\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\gameOver.xnb
+C:\Users\Jack\Documents\GitHub\PPM-v2\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelComplete.xnb
+C:\Users\Jack\Documents\GitHub\PPM-v2\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\levelSelectButton.xnb
+C:\Users\Jack\Documents\GitHub\PPM-v2\Blank game template\Blank Game\bin\Windows\x86\Debug\Content\Controls\playAgain.xnb

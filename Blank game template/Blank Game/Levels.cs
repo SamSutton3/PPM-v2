@@ -157,32 +157,12 @@ namespace PPM_Maze
             
 
 
-            //obstacle.updatePosition(gameTime);
-            //if (Keyboard.GetState().IsKeyDown(Keys.Enter) || level.getFinished())
-            //{
-            //    levelIndex++;
-            //    if (levelIndex > levelList.Count - 1) levelIndex = levelList.Count - 1;
-            //    level = new Levels(levelList[levelIndex], pathTexture);
-            //    Debug.WriteLine(calculatePlayerPercentage(cursor.getPositionList()));
-            //    cursor.resetList();
-            //    level.initialiseGraphics(spriteBatch, whiteRectangle);
-            //    _camera.Position = new Vector2(0, 0);
-            //}
+          
             finishCheck(new Rectangle((int)cursor.worldLocation.X, (int)cursor.worldLocation.Y, 30, 30));
 
             if (getFinished() || (cursor.getHealth() <= 0 && isProcedural))
             {
-                /*
-                 * TO DO:
-                 * IMPLEMENT ADDITIONAL MENU CLASS
-                 * WILL NEED ADDITIONAL ARGUMENTS: WHETHER THE USER PASSED OR FAILED THE LEVEL, WHETHER LEVEL WAS PROCEDURAL OR NOT AND THEIR ACCURACY
-                 * MENU SHOULD CONTAIN OPTIONS TO :
-                 *  RETURN TO MAIN MENU
-                 *  IF  LEVEL WAS PROCEDURAL -> PLAY AGAIN
-                 *  IF LEVEL WAS NORMAL -> PLAY NEXT LEVEL
-                 *  
-                 * MENU SHOULD DISPLAY ACCURACY AND INDICATE PASS OR FAIL (EG GREEN BACKGROUND FOR PASS OR RED BACKGROUND FOR FAIL)
-                 */
+               
                 double accuracy = calculatePlayerPercentage(cursor.getPositionList());
                 bool pass;
                 if (getFinished())
@@ -195,7 +175,7 @@ namespace PPM_Maze
                 }
                 if (isProcedural)
                 {
-                    _game.ChangeState(new AfterProceduralMenu(pass, accuracy, _game, _graphicsDevice, _content));
+                    _game.ChangeState(new AfterProceduralMenu(pass, elapsedTime, _game, _graphicsDevice, _content));
                 }
                 else
                 {
@@ -208,7 +188,7 @@ namespace PPM_Maze
             {
                 cursor.recordLocation();
                 thetaTime += recordInterval;
-                //Debug.WriteLine("locationRecorded");
+                
             }
             //check if out of bounds and deduct health if so
             if(elapsedTime > lastDamageTime + healthDrainBuffer)
@@ -227,16 +207,22 @@ namespace PPM_Maze
                 }
                 lastDamageTime += healthDrainBuffer;
             }
+
+            if (isProcedural)
+            {
+                generationCheck(cursor.worldLocation);
+                alterDifficulty(calculatePlayerPercentage(cursor.getPositionList()));
+            }
         }
 
         public override void PostUpdate(GameTime gameTime)
         {
-            //throw new NotImplementedException();
+            
         }
 
         public override void Draw(GameTime gametime, SpriteBatch spriteBatch)
         {
-            //spriteBatch.Begin();
+            
            
             if (path.isPlayerInBounds(cursor.worldLocation))
             {
@@ -335,22 +321,32 @@ namespace PPM_Maze
             ratio = Math.Round(ratio, 2);
             return ratio;
         }
+
+        public virtual void generationCheck(Vector2 pos)
+        {
+
+        }
+        public virtual void alterDifficulty(double accuracy )
+        {
+
+        }
     }
 
     public class ProceduralLevel : Levels
     {
         //float 0 - 1 represents difficulty
         float difficulty = 0.5f;
+        float difficultyIncrement = 0.02f;
         int standardLevelHeight = 400;
         int minDistance = 70;
         int maxObstacles;
-        const int OBSTACLE_LIMIT = 40;
+        const int OBSTACLE_LIMIT = 60;
         int maxObsWidth = 300;
         int minObsWidth = 30;
         int maxObsHeight;
         int minObsHeight = 50;
         int padding = 50;
-        int segmentWidth = 2000;
+        int segmentWidth = 1400;
         int generationinterval = 500;
 
         int segmentMarker = 0;
@@ -370,7 +366,7 @@ namespace PPM_Maze
             isProcedural = true;
         }
 
-        public void generationCheck(Vector2 pos)
+        public override void generationCheck(Vector2 pos)
         {
             if((int)pos.X >= segmentMarker - generationinterval)
             {
@@ -447,8 +443,10 @@ namespace PPM_Maze
 
         bool obstacleOverlap(Obstacle o1,Obstacle o2)
         {
-            if (o1.getPosition().X + o1.getWidthHeight().X + padding >= o2.getPosition().X ||
-                o2.getPosition().X + o2.getWidthHeight().X + padding >= o1.getPosition().X)
+            if ((o1.getPosition().X + o1.getWidthHeight().X + padding >= o2.getPosition().X &&
+                o2.getPosition().X + o2.getWidthHeight().X + padding <= o1.getPosition().X) ||
+                (o2.getPosition().X + o2.getWidthHeight().X + padding >= o1.getPosition().X &&
+                o1.getPosition().X + o1.getWidthHeight().X + padding <= o2.getPosition().X))
             {
                 return true;
             }
@@ -456,9 +454,24 @@ namespace PPM_Maze
             return false;
         }
 
-        void alterDifficulty(float amount)
+        public override void alterDifficulty(double accuracy)
         {
-            difficulty += amount;
+           if(accuracy > 70)
+            {
+                difficulty += difficultyIncrement;
+                if (difficulty > 1)
+                {
+                    difficulty = 1;
+                }
+            }
+           else if (accuracy < 40)
+            {
+                difficulty -= difficultyIncrement;
+                if(difficulty < 0.05)
+                {
+                    difficulty = 0.05f;
+                }
+            }
         }
     }
 

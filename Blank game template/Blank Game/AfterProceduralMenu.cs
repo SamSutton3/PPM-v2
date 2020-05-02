@@ -13,12 +13,12 @@ namespace PPM_Maze
     {
         private List<Component> _components;
         SpriteFont fontDec;
-        double accuracy;
+        float totalTime;
 
-        public AfterProceduralMenu(bool pass, double accuracy, Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
+        public AfterProceduralMenu(bool pass, float time, Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
           : base(game, graphicsDevice, content)
         {
-
+            totalTime = time;
             var backButton = new Button(_content.Load<Texture2D>("Controls/backButton"))
             {
                 Position = new Vector2(50, 50),
@@ -55,9 +55,10 @@ namespace PPM_Maze
 
 
             string acc;
+            acc = "Time: " + totalTime.ToString() + " seconds";
             //accuracy.ToString(acc);
             fontDec = _content.Load<SpriteFont>("Fonts/font");
-            spriteBatch.DrawString(fontDec, "acc", new Vector2 (830,350), Color.White );
+            spriteBatch.DrawString(fontDec, acc, new Vector2 (830,350), Color.White );
 
 
 

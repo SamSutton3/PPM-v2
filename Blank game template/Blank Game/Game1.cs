@@ -42,20 +42,24 @@ namespace PPM_Maze
 
         public static void toggleMenuMusic(bool toggle = true)
         {
-            if (toggle)
+            if (audio)
             {
-                MediaPlayer.Play(menuMusic);
-            }
-            else
-            {
-                MediaPlayer.Stop();
+                if (toggle)
+                {
+                    MediaPlayer.Play(menuMusic);
+                }
+                else
+                {
+                    MediaPlayer.Stop();
+                }
             }
         }
 
         public static void toggleAudio(bool toggle)
         {
-            audio = toggle;
+            
             toggleMenuMusic(toggle);
+            audio = toggle;
         }
 
         public Game1()

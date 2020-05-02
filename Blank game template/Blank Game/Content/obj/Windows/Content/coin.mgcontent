@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/coin.png</SourceFile>
-  <SourceTime>2020-05-02T11:30:51.9547905+01:00</SourceTime>
-  <DestFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Content/coin.xnb</DestFile>
-  <DestTime>2020-05-02T11:31:37.0638453+01:00</DestTime>
+  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/coin.png</SourceFile>
+  <SourceTime>2020-04-14T14:25:08.9491222+01:00</SourceTime>
+  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Content/coin.xnb</DestFile>
+  <DestTime>2020-05-02T17:42:24.7689557+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Sounds/Coins.mp3</SourceFile>
-  <SourceTime>2020-05-02T11:30:51.4272+01:00</SourceTime>
-  <DestFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Content/Sounds/Coins.xnb</DestFile>
-  <DestTime>2020-05-02T11:31:39.8374329+01:00</DestTime>
+  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/Sounds/Coins.mp3</SourceFile>
+  <SourceTime>2020-05-01T19:28:00+01:00</SourceTime>
+  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Content/Sounds/Coins.xnb</DestFile>
+  <DestTime>2020-05-02T17:42:34.7263459+01:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Content/Sounds/Coins.wma</string>
+    <string>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Content/Sounds/Coins.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

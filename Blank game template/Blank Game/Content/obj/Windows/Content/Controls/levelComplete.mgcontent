@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Controls/levelComplete.png</SourceFile>
-  <SourceTime>2020-05-02T16:37:07.2427414+01:00</SourceTime>
-  <DestFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Content/Controls/levelComplete.xnb</DestFile>
-  <DestTime>2020-05-02T16:38:26.1533068+01:00</DestTime>
+  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/Controls/levelComplete.png</SourceFile>
+  <SourceTime>2020-05-02T17:36:59.6491604+01:00</SourceTime>
+  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Content/Controls/levelComplete.xnb</DestFile>
+  <DestTime>2020-05-02T17:42:25.7943644+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
