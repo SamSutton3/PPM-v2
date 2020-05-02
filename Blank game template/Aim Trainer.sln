@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Blend for Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blank Game", "Blank Game\Blank Game.csproj", "{BD878895-C13C-4AF2-9AAC-D618D63F3993}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aim Trainer", "Blank Game\Aim Trainer.csproj", "{BD878895-C13C-4AF2-9AAC-D618D63F3993}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51D5D962-6ECF-46EC-85EF-DCD3F4792E28}
 	EndGlobalSection
 EndGlobal
