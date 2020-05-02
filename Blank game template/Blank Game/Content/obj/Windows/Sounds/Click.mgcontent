@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/Sounds/Click.mp3</SourceFile>
-  <SourceTime>2020-05-01T19:28:00+01:00</SourceTime>
-  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Sounds/Click.xnb</DestFile>
-  <DestTime>2020-05-01T20:32:17.1701462+01:00</DestTime>
+  <SourceFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Sounds/Click.mp3</SourceFile>
+  <SourceTime>2020-05-02T11:30:51.4222135+01:00</SourceTime>
+  <DestFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Sounds/Click.xnb</DestFile>
+  <DestTime>2020-05-02T15:16:00.2747248+01:00</DestTime>
   <Importer>Mp3Importer</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Sounds/Click.wma</string>
+    <string>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Sounds/Click.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

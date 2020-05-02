@@ -64,8 +64,29 @@ namespace PPM_Maze
         public void Draw(SpriteBatch spriteBatch)
         {
             spriteBatch.Begin();
+            string path = "../../../../colour.txt";
+            if(System.IO.File.Exists(path))
+            {
+                string text = System.IO.File.ReadAllText(path);
+                if (text == "Gold")
+                {
+                    spriteBatch.Draw(Texture, spritePos, Color.Gold);
+                }
+                else if (text == "Blue")
+                {
+                    spriteBatch.Draw(Texture, spritePos, Color.CornflowerBlue);
+                }
+                else
+                {
+                    spriteBatch.Draw(Texture, spritePos, Color.White);
+                }
+            }
+            else
+            {
+                spriteBatch.Draw(Texture, spritePos, Color.White);
+            }
             //spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearWrap, DepthStencilState.Default, RasterizerState.CullNone, null, _camera.GetViewMatrix());
-            spriteBatch.Draw(Texture, spritePos, Color.White);
+            //spriteBatch.Draw(Texture, spritePos, Color.White);
             spriteBatch.End();
         }
     }

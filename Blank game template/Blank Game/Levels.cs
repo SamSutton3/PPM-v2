@@ -193,9 +193,14 @@ namespace PPM_Maze
                 {
                     pass = false;
                 }
-                // change this to your new menu
-                // EG _game.ChangeState(new AfterLevelMenu(pass,accuracy,isProcedural,game,graphicsdevice,content)
-                _game.ChangeState(new levelSelect(_game, _graphicsDevice, _content));
+                if (isProcedural)
+                {
+                    _game.ChangeState(new AfterProceduralMenu(pass, accuracy, _game, _graphicsDevice, _content));
+                }
+                else
+                {
+                    _game.ChangeState(new AfterLevelMenu(pass, accuracy, _game, _graphicsDevice, _content));
+                }
             }
 
             //record mouse location for accuracy

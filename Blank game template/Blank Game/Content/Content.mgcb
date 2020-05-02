@@ -37,6 +37,18 @@
 /processorParam:TextureFormat=Color
 /build:coin.png
 
+#begin Controls/accuracy.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/accuracy.png
+
 #begin Controls/audioLabel.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -120,6 +132,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Controls/exitButton.png
+
+#begin Controls/gameOver.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/gameOver.png
 
 #begin Controls/gameTitle.png
 /importer:TextureImporter
@@ -313,6 +337,18 @@
 /processorParam:TextureFormat=Color
 /build:Controls/levelButton9.png
 
+#begin Controls/levelComplete.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/levelComplete.png
+
 #begin Controls/levelPlay.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -337,6 +373,18 @@
 /processorParam:TextureFormat=Color
 /build:Controls/levelSelect.png
 
+#begin Controls/levelSelectButton.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/levelSelectButton.png
+
 #begin Controls/offButton.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -360,6 +408,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:Controls/onButton.png
+
+#begin Controls/playAgain.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:Controls/playAgain.png
 
 #begin Controls/settingsButton.png
 /importer:TextureImporter

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/Sounds/Win2.wav</SourceFile>
-  <SourceTime>2020-05-01T19:28:00+01:00</SourceTime>
-  <DestFile>C:/Users/Jack/Documents/GitHub/PPM-v2/Blank game template/Blank Game/Content/bin/Windows/Sounds/Win2.xnb</DestFile>
-  <DestTime>2020-05-01T20:32:23.3238611+01:00</DestTime>
+  <SourceFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/Sounds/Win2.wav</SourceFile>
+  <SourceTime>2020-05-02T11:30:51.5099783+01:00</SourceTime>
+  <DestFile>C:/Users/samsu/Desktop/PPM/PPM/PPM/Blank game template/Blank Game/Content/bin/Windows/Sounds/Win2.xnb</DestFile>
+  <DestTime>2020-05-02T15:16:02.0140764+01:00</DestTime>
   <Importer>WavImporter</Importer>
   <ImporterTime>2018-12-08T16:35:54+00:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
